@@ -1,0 +1,169 @@
+body {
+	font: 20px/1.2 'Times new Roman', Georgia, Serif;
+}
+
+.table,
+.table-span,
+.table-list {
+	padding: 50px 0 0 0;
+}
+
+h2 {
+	padding-bottom: 50px;
+	color: #0051ac;
+	font-size: 48px;
+}
+
+h2::first-letter {
+	color: #ff0000;
+}
+
+menu {
+	padding-bottom: 50px;
+}
+
+.position {
+	position: relative;
+}
+
+.arrow::after {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	display: block;
+	transform: translateY(-50%);
+	content: '>';
+}
+
+.submenu-2 li.arrow::after {
+	right: calc(100% - 20px);
+	content: '<';
+}
+
+a {
+	display: block;
+	color: #000;
+}
+
+ul a {
+	padding-top: 5px;
+}
+
+.wrapper {
+	max-width: 880px;
+	margin: 75px auto;
+}
+
+.navbar-top,
+.navbar-middle {
+	display: table;
+	min-width: 100%;
+}
+
+li {
+	height: 38px;
+	background-color: #cfcfcf;
+	cursor: pointer;
+}
+
+.navbar-top > li,
+.navbar-middle > li {
+	position: relative;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+menu > li:not(:last-child) {
+	border-right: 1px solid #ffffff;
+}
+
+.navbar-top li ul li,
+.navbar-middle li ul li {
+	padding-left: 24px;
+	text-align: left;
+	/* vertical-align: middle; */
+	border-top: 1px solid #ffffff;
+}
+
+.navbar-middle .submenu-1 li {
+	background-color: #c8c8fd;
+}
+.navbar-middle .submenu-2 > li {
+	padding-right: 18px;
+	text-align: right;
+	background-color: #8fcb9c;
+}
+
+.navbar-middle .submenu-3 li {
+	background-color: #e7a79f;
+}
+
+.navbar-top > li:nth-child(even) {
+	width: 153px;
+	cursor: auto;
+}
+
+.navbar-top li:hover {
+	background-color: #afafaf;
+}
+
+.navbar-top > li:nth-child(even):hover {
+	background-color: #cfcfcf;
+}
+
+menu li ul {
+	position: absolute;
+	display: none;
+}
+
+.navbar-top li > ul,
+.submenu-1 {
+	top: 100%;
+	width: 176px;
+}
+
+.submenu-2,
+.submenu-3 {
+	top: -1px;
+}
+
+.submenu-2 {
+	left: 100%;
+	width: 224px;
+	border-left: 1px solid #ffffff;
+}
+
+.submenu-3 {
+	right: calc(100% + 1px);
+	width: 107px;
+}
+
+.navbar-top li:hover > ul,
+.navbar-middle li:hover > ul {
+	display: block;
+}
+
+.navbar-top li:last-child ul {
+	right: 0;
+}
+
+/*--*/
+
+/* .navbar-top {
+	display: none;
+} */
+
+/* .navbar-middle {
+	display: none;
+} */
+
+.navbar-bottom {
+	display: none;
+}
+
+/*--*/
+
+.tablets {
+	padding: 0 4px 0 4px;
+}

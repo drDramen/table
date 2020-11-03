@@ -18,8 +18,8 @@
 				<nav>
 
 
-					<menu class="navbar-top">
-						<li><a href="#">Smartphones</a>
+					<menu class="navbar-top table">
+						<li class="table-cell"><a href="#">Smartphones</a>
 							<ul>
 								<li><a href="#">Samsung</a></li>
 								<li><a href="#">Nokia</a></li>
@@ -27,8 +27,8 @@
 								<li><a href="#">LG</a></li>
 							</ul>
 						</li>
-						<li></li>
-						<li><a class="tablets" href="#">Tablets</a>
+						<li class="table-cell"></li>
+						<li class="table-cell"><a class="tablets" href="#">Tablets</a>
 							<ul>
 								<li><a href="#">Samsung</a></li>
 								<li><a href="#">Lenovo</a></li>
@@ -36,16 +36,16 @@
 								<li><a href="#">LG</a></li>
 							</ul>
 						</li>
-						<li></li>
-						<li><a href="#">Netbooks</a>
+						<li class="table-cell"></li>
+						<li class="table-cell"><a href="#">Netbooks</a>
 							<ul>
 								<li><a href="#">Samsung</a></li>
 								<li><a href="#">Toshiba</a></li>
 								<li><a href="#">Lenovo</a></li>
 							</ul>
 						</li>
-						<li></li>
-						<li><a href="#">Notebooks</a>
+						<li class="table-cell"></li>
+						<li class="table-cell"><a href="#">Notebooks</a>
 							<ul>
 								<li><a href="#">Samsung</a></li>
 								<li><a href="#">Lenovo</a></li>
@@ -56,16 +56,16 @@
 						</li>
 					</menu>
 
-					<menu class="navbar-middle">
-						<li><a href="#">Images</a></li>
-						<li><a href="#">Video</a>
+					<menu class="navbar-middle table">
+						<li class="table-cell"><a href="#">Images</a></li>
+						<li class="table-cell"><a href="#">Video</a>
 							<ul class="submenu-1">
 								<li><a href="#">Item 1</a></li>
-								<li class="position arrow"><a href="#">Item 2</a>
+								<li class="arrow"><a href="#">Item 2</a>
 									<ul class="submenu-2">
 										<li><a href="#">Item 1 cat</a></li>
 										<li><a href="#">Item 2 panda</a></li>
-										<li class="position arrow"><a href="#">Item 3 fish</a>
+										<li class="arrow"><a href="#">Item 3 fish</a>
 											<ul class="submenu-3">
 												<li><a href="#">Gogo</a></li>
 												<li><a href="#">Nono</a></li>
@@ -85,62 +85,214 @@
 						<li><a href="#">Trash</a></li>
 					</menu>
 
-					<menu class="navbar-bottom">
-						<ul>
-							<li>Home</li>
-							<li>About Us
-								<ul>
-									<li>Contacts</li>
-									<li>Our Employees</li>
-									<li>Presentation</li>
-									<li>Certificates</li>
-								</ul>
-							</li>
-							<li>Products
-								<ul>
-									<li>DC Generators</li>
-									<li>Diesel Engines</li>
-									<li>Gas Engines</li>
-									<li>Electric Engines</li>
-									<li>Gear Boxes</li>
-									<li>Transmission Boxes</li>
-									<li></li>
-								</ul>
-							</li>
-							<li>Gallery
-								<ul>
-									<li>2007 NY Corp</li>
-									<li>2007 Event</li>
-									<li>2008 NY Corp</li>
-									<li>2008 Event</li>
-									<li>2009 NY Corp</li>
-									<li>General conference of our bussiness</li>
-									<li>2010 NY Corp</li>
-									<li>2010 Event</li>
-								</ul>
-							</li>
-							<li>Contacts</li>
-						</ul>
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
+					<menu class="navbar-bottom table">
+						<li class="navbar-bottom__menu-1">
+							<ul class="table">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About Us</a>
+									<ul>
+										<li class="table"> <a class="table-cell" href="#">Contacts</a></li>
+										<li class="table"> <a class="table-cell" href="#">Our Employees</a></li>
+										<li class="table"> <a class="table-cell" href="#">Presentation</a></li>
+										<li class="table"> <a class="table-cell" href="#">Certificates</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Products</a>
+									<!-- <ul>
+										<li class="table"><a class="table-cell" href="#">DC Generators</a></li>
+										<li class="table"><a class="table-cell" href="#">Diesel Engines</a></li>
+										<li class="table"><a class="table-cell" href="#">Gas Engines</a></li>
+										<li class="table"><a class="table-cell" href="#">Electric Engines</a></li>
+										<li class="table"><a class="table-cell" href="#">Gear Boxes</a></li>
+										<li class="table"><a class="table-cell" href="#">Transmission Boxes</a></li>
+										<li></li>
+									</ul> -->
+
+									<div class="table">
+										<ul class="trow">
+											<li class="table-cell"><a href="#">DC Generators</a></li>
+											<li class="table-cell"><a href="#">Gear Boxes</a></li>
+										</ul>
+										<ul class="trow">
+											<li class="table-cell"><a href="#">Diesel Engines</a></li>
+											<li class="table-cell"><a href="#">Transmission Boxes</a></li>
+										</ul>
+										<ul class="trow">
+											<li class="table-cell"><a href="#">Gas Engines</a></li>
+											<li class="nohover"></li>
+										</ul>
+										<ul class="trow">
+											<li class="table-cell"><a href="#">Electric Engines</a></li>
+										</ul>
+									</div>
+
+
+								</li>
+								<li><a href="#">Gallery</a>
+									<ul>
+										<li class="table"><a class="table-cell" href="#">2007 NY Corp</a></li>
+										<li class="table"><a class="table-cell" href="#">2007 Event</a></li>
+										<li class="table"><a class="table-cell" href="#">2008 NY Corp</a></li>
+										<li class="table"><a class="table-cell" href="#">2008 Event</a></li>
+										<li class="table"><a class="table-cell" href="#">2009 NY Corp</a></li>
+										<li class="table"><a class="table-cell" href="#">General conference of our bussiness</a></li>
+										<li class="table"><a class="table-cell" href="#">2010 NY Corp</a></li>
+										<li class="table"><a class="table-cell" href="#">2010 Event</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+						</li>
+
+						<li class="navbar-bottom__menu-2">
+							<ul class="table clear-fix">
+								<li><a class="sprite i-s" href="#"></a></li>
+								<li><a class="sprite i-g" href="#"></a></li>
+								<li><a class="sprite i-t" href="#"></a></li>
+							</ul>
+						</li>
 					</menu>
 
 
 				</nav>
 			</div>
 
-			<div class="table">
+			<div class="block">
 				<h2>Table</h2>
+				<table class="table-block">
+					<thead>
+						<tr>
+							<th rowspan="2">#</th>
+							<th class="col-name" rowspan="2">Name</th>
+							<th colspan="3">Results</th>
+						</tr>
+						<tr>
+							<th rowspan="2">2007</th>
+							<th rowspan="2">2008</th>
+							<th colspan="3">2009</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td class="col-name">John Smith</td>
+							<td class="align-right">55.2</td>
+							<td class="align-right">71.4</td>
+							<td class="align-right">33.7</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td class="col-name">Willjamson Brown J.</td>
+							<td class="align-right">55.2</td>
+							<td class="align-right">71.4</td>
+							<td class="align-right">33.7</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td class="col-name">John Smith</td>
+							<td class="align-right">55.2</td>
+							<td class="align-right">71.4</td>
+							<td class="align-right">33.7</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td class="col-name">Willjamson Brown J.</td>
+							<td class="align-right">55.2</td>
+							<td class="align-right">71.4</td>
+							<td class="align-right">33.7</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td class="col-name">John Smith</td>
+							<td class="align-right">55.2</td>
+							<td class="align-right">71.4</td>
+							<td class="align-right">33.7</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td class="col-name">Willjamson Brown J.</td>
+							<td class="align-right">55.2</td>
+							<td class="align-right">71.4</td>
+							<td class="align-right">33.7</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td class="col-name">John Smith</td>
+							<td class="align-right">55.2</td>
+							<td class="align-right">71.4</td>
+							<td class="align-right">33.7</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td class="col-name">Willjamson Brown J.</td>
+							<td class="align-right">55.2</td>
+							<td class="align-right">71.4</td>
+							<td class="align-right">33.7</td>
+						</tr>
+					</tbody>
+
+				</table>
+
+
 			</div>
 
-			<div class="table-span">
+			<div class="block">
 				<h2>Spans like Table</h2>
+				<span class="table-block">
+					<span class="row">
+						<span>#</span>
+						<span>Name</span>
+						<span>2007</span>
+						<span>2008</span>
+						<span>2009</span>
+					</span>
+
+					<span class="row">
+						<span>1</span>
+						<span>John Smith</span>
+						<span>55.2</span>
+						<span>71.4</span>
+						<span>33.7</span>
+					</span>
+					<span class="row">
+						<span>2</span>
+						<span>Willjamson Brown J.</span>
+						<span>55.2</span>
+						<span>71.4</span>
+						<span>33.7</span>
+					</span>
+					<span class="row">
+						<span>3</span>
+						<span>John Smith</span>
+						<span>55.2</span>
+						<span>71.4</span>
+						<span>33.7</span>
+					</span>
+					<span class="row">
+						<span>4</span>
+						<span>Willjamson Brown J.</span>
+						<span>55.2</span>
+						<span>71.4</span>
+						<span>33.7</span>
+					</span>
+					<span class="row">
+						<span>5</span>
+						<span>John Smith</span>
+						<span>55.2</span>
+						<span>71.4</span>
+						<span>33.7</span>
+					</span>
+					<span class="row">
+						<span>6</span>
+						<span>Willjamson Brown J.</span>
+						<span>55.2</span>
+						<span>71.4</span>
+						<span>33.7</span>
+					</span>
+				</span>
 			</div>
 
-			<div class="table-list">
+			<div class="block">
 				<h2>List like table</h2>
 			</div>
 

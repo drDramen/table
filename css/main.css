@@ -43,8 +43,8 @@ menu {
 }
 
 a {
-	width: 100%;
-	height: 100%;
+	/* width: 100%;
+	height: 100%; */
 	color: #000;
 }
 
@@ -79,13 +79,15 @@ menu > li:not(:last-child) {
 	display: table;
 	width: 100%;
 }
+.top-submenu {
+	border-top: 1px solid #ffffff;
+}
 
 .navbar-top li ul li,
 .navbar-middle li ul li,
 .navbar-bottom__menu-1 li ul li {
 	padding-left: 24px;
 	text-align: left;
-	border-top: 1px solid #ffffff;
 }
 
 .table-cell,
@@ -98,6 +100,7 @@ menu > li:not(:last-child) {
 .navbar-middle .submenu-1 li {
 	background-color: #c8c8fd;
 }
+
 .navbar-middle .submenu-2 > li {
 	padding-right: 18px;
 	text-align: right;
@@ -112,15 +115,26 @@ menu > li:not(:last-child) {
 	width: 153px;
 	cursor: auto;
 }
+
 .navbar-top li:hover,
 .navbar-middle li:hover {
 	background-color: #afafaf;
+}
+
+.navbar-bottom__menu-2 .table li {
+	padding-right: 6px;
 }
 
 .navbar-bottom__menu-1 > ul > li:not(:last-child),
 div.table .table-cell:not(:last-child),
 div.table .table-cell:first-child {
 	border-right: 1px solid #ffffff;
+}
+
+.navbar-top li ul li:not(:last-child),
+.navbar-middle li ul li:not(:last-child),
+.navbar-bottom__menu-1 .trow:not(:last-child) li {
+	border-bottom: 1px solid #ffffff;
 }
 
 .navbar-bottom__menu-1 .table li:hover {
@@ -243,7 +257,7 @@ menu li ul {
 
 .sprite {
 	position: relative;
-	display: block;
+	display: table-cell;
 	width: 32px;
 	height: 32px;
 	margin-right: 6px;

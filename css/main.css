@@ -39,7 +39,8 @@ menu:not(:last-child) {
 }
 
 .submenu-2 li.arrow::after {
-	right: calc(100% - 20px);
+	right: auto;
+	left: 10px;
 	transform: ScaleX(-1) translateY(-50%);
 }
 

@@ -7,12 +7,13 @@ body {
 	content: '';
 }
 
+.navigation,
 .block {
-	padding: 50px 0 0 0;
+	padding: 0px 0 76px 0;
 }
 
 h2 {
-	padding-bottom: 50px;
+	padding-bottom: 39px;
 	color: #0051ac;
 	font-size: 48px;
 }
@@ -21,7 +22,7 @@ h2::first-letter {
 	color: #ff0000;
 }
 
-menu {
+menu:not(:last-child) {
 	padding-bottom: 50px;
 }
 
@@ -43,18 +44,19 @@ menu {
 }
 
 a {
-	/* width: 100%;
-	height: 100%; */
+	display: block;
+	height: 100%;
+	padding: 6px 0 8px;
 	color: #000;
 }
 
 .wrapper {
 	max-width: 880px;
-	margin: 75px auto;
+	margin: 72px auto;
 }
 
 li {
-	height: 39px;
+	height: 38px;
 	background-color: #cfcfcf;
 	cursor: pointer;
 }
@@ -73,21 +75,19 @@ menu > li:not(:last-child) {
 	border-right: 1px solid #ffffff;
 }
 
+.navbar-middle {
+	table-layout: fixed;
+}
+
 .table,
 .navbar-top ul > li,
 .navbar-middle ul > li {
 	display: table;
 	width: 100%;
 }
+
 .top-submenu {
 	border-top: 1px solid #ffffff;
-}
-
-.navbar-top li ul li,
-.navbar-middle li ul li,
-.navbar-bottom__menu-1 li ul li {
-	padding-left: 24px;
-	text-align: left;
 }
 
 .table-cell,
@@ -97,14 +97,30 @@ menu > li:not(:last-child) {
 	vertical-align: middle;
 }
 
+.navbar-top li ul li a,
+.navbar-middle li ul li a,
+.navbar-bottom__menu-1 li ul li a {
+	padding-left: 24px;
+	text-align: left;
+}
+
+.navbar-middle .t-c-long {
+	width: 375px;
+}
+
 .navbar-middle .submenu-1 li {
 	background-color: #c8c8fd;
 }
 
-.navbar-middle .submenu-2 > li {
+.navbar-middle .submenu-2 > li > a {
 	padding-right: 18px;
 	text-align: right;
 	background-color: #8fcb9c;
+}
+
+menu.navbar-top li.table-cell > a {
+	padding-right: 12px;
+	padding-left: 12px;
 }
 
 .navbar-middle .submenu-3 li {
@@ -133,6 +149,7 @@ div.table .table-cell:first-child {
 
 .navbar-top li ul li:not(:last-child),
 .navbar-middle li ul li:not(:last-child),
+.navbar-bottom__menu-1 .top-submenu > li:not(:last-child),
 .navbar-bottom__menu-1 .trow:not(:last-child) li {
 	border-bottom: 1px solid #ffffff;
 }
@@ -207,8 +224,8 @@ menu li ul {
 
 /*--*/
 
-.navbar-bottom__menu-1 {
-	width: 605px;
+.navbar-bottom__menu-2 {
+	width: 275px;
 }
 
 .navbar-bottom__menu-1,
@@ -221,7 +238,11 @@ menu li ul {
 .navbar-bottom__menu-1 > .table {
 	position: relative;
 	z-index: 0;
-	table-layout: fixed;
+}
+
+.navbar-bottom .navbar-bottom__menu-1 > ul > li > a {
+	padding-right: 24px;
+	padding-left: 24px;
 }
 
 .navbar-bottom__menu-2 .table {
@@ -255,12 +276,11 @@ menu li ul {
 	display: table;
 }
 
-.sprite {
+a.sprite {
 	position: relative;
 	display: table-cell;
 	width: 32px;
 	height: 32px;
-	margin-right: 6px;
 }
 
 .sprite::before {
@@ -286,14 +306,23 @@ menu li ul {
 	background-position: -102px 0px;
 }
 
+.navbar-bottom__menu-1 a.sprite.i-h {
+	display: block;
+	width: auto;
+	height: 100%;
+	padding-left: 57px;
+	text-align: left;
+}
+
+.sprite.i-h::before {
+	top: 3px;
+	left: 20px;
+}
+
 .sprite:hover::before {
 	z-index: 999;
 	background-position-y: -34px;
 	transform: scale(1.1);
-}
-
-.tablets {
-	padding: 0 4px 0 4px;
 }
 
 .table-block {
@@ -305,14 +334,14 @@ menu li ul {
 
 .table-block .row span {
 	display: table-cell;
-	padding: 7px 5px;
+	padding: 7px 5px 7px 7px;
 	text-align: center;
 	vertical-align: middle;
 }
 
 th,
 td {
-	padding: 7px 5px;
+	padding: 7px 5px 7px 7px;
 }
 
 tr,
@@ -345,13 +374,14 @@ tr:nth-child(odd),
 
 .col-name,
 .row span:nth-child(2) {
-	padding-left: 20px;
+	width: 470px;
+	padding-left: 21px;
 	text-align: left;
 }
 
 .align-right,
 .row:not(:first-child) span:nth-child(n + 3) {
-	padding-right: 12px;
+	padding-right: 13px;
 	text-align: right;
 }
 
@@ -367,4 +397,72 @@ span.table-block {
 
 span.row {
 	display: table-row;
+}
+
+dl {
+	display: table-row;
+}
+
+dt,
+dd {
+	display: table-cell;
+	height: 39px;
+	vertical-align: middle;
+	background-color: #cfcfcf;
+}
+
+dt {
+	width: 255px;
+	padding-left: 40px;
+	font-weight: 700;
+	font-style: italic;
+	border-right: 1px solid #fff;
+}
+
+dd {
+	width: 157px;
+	padding-right: 9px;
+	text-align: right;
+}
+
+dl:not(:last-child) dt,
+dl:not(:last-child) dd {
+	border-bottom: 1px solid #fff;
+}
+
+dt.sprite {
+	position: relative;
+}
+
+dt.sprite::before {
+	top: 50%;
+	left: 4px;
+	transform: translateY(-50%);
+}
+
+.i-weight.sprite::before {
+	background-position: -136px 0px;
+}
+.i-size.sprite::before {
+	background-position: -170px 0px;
+}
+.i-power.sprite::before {
+	background-position: -204px 0px;
+}
+.i-price.sprite::before {
+	background-position: -238px 0px;
+}
+
+dl:hover .sprite::before {
+	z-index: 999;
+	background-position-y: -34px;
+	transform: scale(1.1) translateY(-50%);
+}
+
+dl:hover dt,
+dl:hover dd {
+	font-weight: 700;
+	font-size: 1.05em;
+	background-color: #bfbfbf;
+	cursor: pointer;
 }

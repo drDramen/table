@@ -209,22 +209,6 @@ menu li ul {
 	display: block;
 }
 
-/*--*/
-
-/* .navbar-top {
-	display: none;
-} */
-
-/* .navbar-middle {
-	display: none;
-} */
-
-/* .navbar-bottom {
-	display: none;
-} */
-
-/*--*/
-
 .navbar-bottom__menu-2 {
 	width: 275px;
 }
@@ -279,7 +263,6 @@ menu li ul {
 
 a.sprite {
 	position: relative;
-	display: table-cell;
 	width: 32px;
 	height: 32px;
 }
@@ -444,12 +427,15 @@ dt.sprite::before {
 .i-weight.sprite::before {
 	background-position: -136px 0px;
 }
+
 .i-size.sprite::before {
 	background-position: -170px 0px;
 }
+
 .i-power.sprite::before {
 	background-position: -204px 0px;
 }
+
 .i-price.sprite::before {
 	background-position: -238px 0px;
 }
